@@ -268,7 +268,7 @@ a {
   .product-promo__category {
     text-align: center;
     flex-basis: 37%;
-    background-image: url(/img/product-cover.png);
+    background-image: url(../img/product-cover.png);
     background-size: cover;
     background-repeat: no-repeat; }
   .product-promo__inner {
@@ -302,7 +302,7 @@ a {
   .products__product-promo_reverse {
     margin: 8rem 0 0; }
   .products__category {
-    background-image: url(/img/product-cover2.png); }
+    background-image: url(../img/product-cover2.png); }
   .products__item {
     background-color: #EDF3F6; }
 
@@ -311,8 +311,12 @@ a {
   color: #031622; }
   .quote__container {
     padding: 13rem 22rem;
-    text-align: center; }
-
+    text-align: center;}
+  @media (max-width:767px) {
+  .quote__container {
+    padding: 12rem 12rem;
+  }
+    }
 .reviews {
   margin: 7rem 0 8rem; }
   .reviews__headline {
@@ -337,6 +341,11 @@ a {
     @media (max-width: 991px) {
       .reviews__quote {
         font-size: 1.6rem; } }
+      @media (max-width: 767px) {
+        .reviews__quote {
+          font-size: 1.2rem;
+          max-height: none;
+          height: auto; } }
   .reviews__text {
     padding: 0;
     margin: 0;
@@ -464,7 +473,8 @@ a {
     justify-content: space-between; }
   .footer__nav {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    flex-wrap: wrap; }
   .footer__links {
     margin: 0 4rem; }
   .footer__headline {
